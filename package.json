@@ -1,0 +1,24 @@
+{
+  "name": "tp1",
+  "version": "1.0.0",
+  "description": "Primer TP",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Ej01": "node src/ej01.js",
+    "Ej02": "node src/ej02.js",
+    "Ej03": "node src/ej03.js",
+    "Ej04": "node src/ej04.js",
+    "Ej05": "node src/ej05.js",
+    "Ej06": "node src/ej06.js",
+    "Ej07": "node src/ej07.js",
+    "Ej08": "node src/ej08.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "currency-map-country": "^1.0.12"
+  }
+}
