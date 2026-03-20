@@ -4,8 +4,6 @@ let miUrl = null;
 let miObjeto = null;
 
 miUrl = 'http://www.ort.edu.ar:8080/alumnos/index.htm?curso=2022&mes=mayo';
-// Probá también con algo inválido:
-// miUrl = 'esto-no-es-una-url';
 
 miObjeto = parsearUrl(miUrl);
 
