@@ -1,35 +1,15 @@
-import axios from "axios";
+import {OMDBSearchByPage, OMDBSearchComplete, OMDBGetByImdbID} from './modules/omdb-wrapper.js'
 
-const APIKEY = "TU_API_KEY"; 
 
-const OMDBSearchByPage = async (searchText, page = 1) => {
-    let returnObject = {
-        respuesta: false,
-        cantidadTotal: 0,
-        datos: []
-    };
+let resultado = null;
 
-    return returnObject;
-};
+//Test de la función OMDBSearchByPage..
 
-const OMDBSearchComplete = async (searchText) => {
-let returnObject = {
-respuesta : false,
-cantidadTotal : 0,
-datos : []
-};
+resultado  = await OMDBSearchByPage("cars", 1);
+console.log("OMDBSearchByPage", resultado);
 
-    return returnObject;
-};
+resultado = await OMDBSearchComplete("juego");
+console.log("OMDBSearchComplete", resultado);
 
-const OMDBGetByImdbID = async (imdbID) => {
-let returnObject = {
-respuesta : false,
-cantidadTotal : 0,
-datos : {}
-};
-
-    return returnObject;
-};
-
-export {OMDBSearchByPage, OMDBSearchComplete, OMDBGetByImdbID};
+resultado = await OMDBGetByImdbID("tt0317219"); 
+console.log("OMDBGetByImdbID", resultado);
